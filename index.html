@@ -1,74 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>VCU Engineering Annual Review</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/jquery.fullpage.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet/less" type="text/css" href="section-fade.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 </head>
 
 <body>
-    <nav class="fixed-bottom">
-        <ul class="nav nav-pills nav-fill">
-            <li data-menuanchor="bmeSection" class="nav-item">
-                <a class="nav-link" href="#bmeSection">Biomedical Engineering</a>
-            </li>
-            <li data-menuanchor="clseSection" class="nav-item">
-                <a class="nav-link" href="#clseSection">Chemical and Life Science</a>
-            </li>
-            <li data-menuanchor="csSection" class="nav-item">
-                <a class="nav-link" href="#csSection">Computer Science</a>
-            </li>
-            <li data-menuanchor="eceSection" class="nav-item">
-                <a class="nav-link" href="#eceSection">Electrical and Computer Engineering</a>
-            </li>
-            <li data-menuanchor="mneSection" class="nav-item">
-                <a class="nav-link" href="#mneSection">Mechanical and Nuclear Engineering</a>
-            </li>
-        </ul>
-    </nav>
-    <div id="fullpage">
-        <div class="section bme">
-            <div class="container"><h1>Biomedical Engineering</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor mauris sed metus euismod venenatis. Maecenas accumsan turpis justo. Nunc pharetra dolor suscipit, dignissim ligula non, mattis sem. Morbi tristique commodo pulvinar. Praesent hendrerit eu lacus ac volutpat. Morbi tempor commodo est sed vulputate. Maecenas ultrices ultricies justo. Sed finibus ut tellus et molestie. Cras tincidunt augue eget posuere iaculis. Suspendisse mollis leo a nisi malesuada ultricies. Etiam in justo quis dolor molestie mollis. Etiam fermentum sem vitae dolor vulputate, vitae tincidunt felis pulvinar. In convallis lacus metus, tempor condimentum mi ultrices sit amet.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor mauris sed metus euismod venenatis. Maecenas accumsan turpis justo. Nunc pharetra dolor suscipit, dignissim ligula non, mattis sem. Morbi tristique commodo pulvinar. Praesent hendrerit eu lacus ac volutpat. Morbi tempor commodo est sed vulputate. Maecenas ultrices ultricies justo. Sed finibus ut tellus et molestie. Cras tincidunt augue eget posuere iaculis. Suspendisse mollis leo a nisi malesuada ultricies. Etiam in justo quis dolor molestie mollis. Etiam fermentum sem vitae dolor vulputate, vitae tincidunt felis pulvinar. In convallis lacus metus, tempor condimentum mi ultrices sit amet.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor mauris sed metus euismod venenatis. Maecenas accumsan turpis justo. Nunc pharetra dolor suscipit, dignissim ligula non, mattis sem. Morbi tristique commodo pulvinar. Praesent hendrerit eu lacus ac volutpat. Morbi tempor commodo est sed vulputate. Maecenas ultrices ultricies justo. Sed finibus ut tellus et molestie. Cras tincidunt augue eget posuere iaculis. Suspendisse mollis leo a nisi malesuada ultricies. Etiam in justo quis dolor molestie mollis. Etiam fermentum sem vitae dolor vulputate, vitae tincidunt felis pulvinar. In convallis lacus metus, tempor condimentum mi ultrices sit amet.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor mauris sed metus euismod venenatis. Maecenas accumsan turpis justo. Nunc pharetra dolor suscipit, dignissim ligula non, mattis sem. Morbi tristique commodo pulvinar. Praesent hendrerit eu lacus ac volutpat. Morbi tempor commodo est sed vulputate. Maecenas ultrices ultricies justo. Sed finibus ut tellus et molestie. Cras tincidunt augue eget posuere iaculis. Suspendisse mollis leo a nisi malesuada ultricies. Etiam in justo quis dolor molestie mollis. Etiam fermentum sem vitae dolor vulputate, vitae tincidunt felis pulvinar. In convallis lacus metus, tempor condimentum mi ultrices sit amet.</p>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="m-auto navbar-nav">
+                <a data-menuanchor="page1" href="#page1" class="nav-item nav-link">Cover</a>
+                <a data-menuanchor="page2" href="#page2" class="nav-item nav-link">From the Dean</a>
+                <a data-menuanchor="page3" href="#page3" class="nav-item nav-link">Research Highlights</a>
+                <a data-menuanchor="page4" href="#page4" class="nav-item nav-link">Securing the Drug Supply Chain</a>
+                <a data-menuanchor="page5" href="#page5" class="nav-item nav-link">COVID Challenge Accepted</a>
             </div>
         </div>
-        <div class="section clse">Chemical and Life Science Engineering</div>
-        <div class="section cs">Computer Science</div>
-        <div class="section ece">Electrical and Computer Engineering</div>
-        <div class="section mne">Mechanical and Nuclear Engineering</div>
-        <div class="section">
-            <div class="slide">Demo Multiple Slides</div>
-            <div class="slide">Section 2 / Slide 2</div>
-            <div class="slide">Section 2 / Slide 3</div>
-            <div class="slide">Section 2 / Slide 4</div>
+    </nav>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div class="wrapper">
+                <img src="imgs/2020AnnualMag_v2-1.jpg">
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="wrapper">
+                <img src="imgs/Dean_recolor2.jpg" class="float-md-right dean-photo">
+                <h1>From the Dean</h1>
+                <p>It is impossible to reflect upon 2020 without considering the impact of the novel coronavirus that changed our world. Even now, we’re not entirely sure how COVID-19 will impact us long-term. What we do know is that engineers solve problems and this one is no different.</p>
+                <p>Like many, our engineers immediately responded to the
+                    shortage of medical and personal protective equipment
+                    by forming collaborations to design a do-it-yourself
+                    ventilator from 3D-printed parts, to disinfect facemasks
+                    for reuse, to create small-batch sanitizer and to create a
+                    predictive data model to track the coronavirus spread,
+                    allowing health systems to anticipate needed resources.</p>
+                <p>Our Medicines for All Institute formed new public-private
+                    partnerships this year to bring advanced manufacturing
+                    of critically needed pharmaceuticals back to the United
+                    States, producing drugs currently in short supply that
+                    Americans need most, right here at home.</p>
+                <p>At the same time, our faculty transitioned to remote
+                    teaching while our students adapted to an all-remote
+                    learning environment. Although COVID-19 changed the
+                    way we did things, it didn’t slow us down.</p>
+                <p>We are on track to open our 133,000-square-foot
+                    Engineering Research Building in early 2021. Our faculty
+                    continue making research advances that better humanity,
+                    such as a cane that steers itself to guide those with visual
+                    impairment and technologies for early detection of
+                    Parkinson’s disease. Our students continue earning national
+                    and international recognition, including selection to the
+                    prestigious Lindau Nobel Laureate meeting, and our
+                    biomedical engineering graduate program is among the
+                    top-ranked.</p>
+                <p>It’s been a year of progress for VCU Engineering as we’ve
+                    advanced in research, in industry partnerships and in
+                    unexpected ways. I hope it’s been a similar year for you.</p>
+                <h2>Go Rams!</h2>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="slide" id="slide0">
+            <div class="wrapper"><h1 class="text-center mb-5 egr">Research Highlights</h1>
+            <p class="text-center">Use the arrows to view highlights from each department</p></div>
+            </div>
+            <div class="slide" id="slide1">
+                <div class="wrapper">
+                    <h1 class="text-center mb-5 bme">Biomedical Engineering</h1>
+                    <h2>Examining macrophage response to biomaterials</h2>
+                    <p><a href="#">René Olivares-Navarrete, D.D.S., Ph.D.</a>, has received a $1.76 million grant from the National Institute of Dental and Craniofacial Research at the National Institutes of Health to investigate how immune system cells control the body’s response to biomaterials. He is investigating the process by which macrophages and a type of protein they produce may orchestrate cells to respond to different kinds of implant surfaces, become pro-inflammatory or anti-inflammatory and recruit stem and immune cells.</p>
+                    <h2 class="mt-5">Cell mechanics of tissue organization</h2>
+                    <p><a href="#">Daniel E. Conway, Ph.D.</a>, is studying the cellular- and tissue-level forces that maintain homeostasis in 3D epithelial structures. In one major study, he identified the importance of nuclear-cytoskeletal connections in regulating cellular contractility and maintaining tissue homeostasis. In a subsequent paper, he showed that osmotic gradients generate large mechanical forces in closed 3D tissue structures, and that these forces regulate fundamental cellular processes.</p>
+                    <h2 class="mt-5">Groundbreaking eye-tracking technology</h2>
+                    <p>Technology invented at VCU by a team led by <a href="#">Paul A. Wetzel, Ph.D.</a>, can assist a physician in diagnosing Parkinson’s disease and other conditions. In a quick, non-invasive diagnostic test, an eye tracker analyzes the eye’s natural movements. Wetzel and his collaborators won the university’s 2019 Billy R. Martin Award for Innovation for the invention.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="wrapper">
+                    <h1 class="text-center mb-5 clse">Chemical and Life Science Engineering</h1>
+                    <h2>NSF awards grant for ‘Alexa of chemistry’</h2>
+                    <p>Researchers in the Department of Chemical and Life Science Engineering are spearheading a multi-university project seeking to use artificial intelligence to help scientists come up with the perfect molecule for everything from a better shampoo to coatings on advanced microchips. Led by professors <a href="#">James K. Ferri, Ph.D.</a>, and <a href="#">D. Tyler McQuade, Ph.D.</a>, the team received nearly $995,000 in National Science Foundation funding for the first phase. For the second phase, the group was able to vie for funding of up to $5 million for two more years.</p>
+                    <h2 class="mt-5">Saving the cities under the sea</h2>
+                    <p>Coral reefs are dying all over the world. <a href="#">Nastassja Lewinski, Ph.D.</a>, is part of a multi-university team researching ways to help coral survive. Lewinski is receiving about $333,000 over two years as part of a larger National Science Foundation grant to develop a line of similar coral cells and to investigate changes at the cellular level in coral biomineralization, symbiosis and wound healing. Her team is working toward developing materials that will arrange coral cells and polyps into integrated networks.</p>
+                    <h2 class="mt-5">Gupta elected AIChE Fellow</h2>
+                    <p><a href="#">Ram B. Gupta, Ph.D.</a>, has been elected a Fellow of the American Institute of Chemical Engineers (AIChE). Gupta, whose research focus areas include batteries, sustainable energy and materials, is the first faculty member at Virginia Commonwealth University to reach AIChE’s highest grade of membership. The honor reflects a member’s distinctive professional achievements and accomplishments.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class="wrapper">
+                    <h1 class="text-center mb-5 cs">Computer Science</h1>
+                    <h2>Cyber researcher named CCI Fellow</h2>
+                    <p>The Commonwealth Cyber Initiative (CCI) named <a href="#">Milos Manic, Ph.D.</a>, a CCI Fellow for 2020-2021. Manic, a noted specialist in cybersecurity and artificial intelligence (AI), is widely published in cybersecurity/resilience, trust in AI, deep learning and energy/critical infrastructures. As a CCI Fellow, he will work to advance cyber research excellence in Virginia. The eight CCI Fellows represent the top echelons of cyber research in universities across the state.</p>
+                    <h2 class="mt-5">Assessing risk of premature birth</h2>
+                    <p><a href="#">Tomasz Arodz, Ph.D.</a>, is part of an interdisciplinary team that produced two major studies published May 29, 2019, in Nature Medicine. These studies provide a comprehensive profile of the vaginal microbiome during pregnancy, including correlations between microbiome composition and premature birth — groundbreaking research that may help assess the risk of preterm delivery, particularly among African American women. Nature Medicine is the highest-cited journal in preclinical medicine.</p>
+                    <h2 class="mt-5">Digital forensics for national security</h2>
+                    <p><a href="#">Irfan Ahmed, Ph.D.</a>, received a 2019 Ralph E. Powe Junior Faculty Enhancement Award presented by the Oak Ridge Associated Universities. This award will support Ahmed’s research to develop digital forensic techniques for industrial control systems used to monitor and control pipelines, water systems, the power grid and other critical infrastructure essential to national security. Ahmed will work with the Oak Ridge National Laboratory on this project.</p>
+                </div>
+            </div>
+            <div class="slide" id="slide4">
+                <div class="wrapper">
+                    <h1 class="text-center mb-5 ece">Electrical and Computer Engineering</h1>
+                    <h2>Simulations show electromagnetics at work</h2>
+                    <p>To make challenging electromagnetics concepts easier for students to understand, <a href="#">Nathaniel Kinsey, Ph.D.</a>, has designed interactive, computer-based simulations that display electromagnetic problems as colorful, 3D images. The simulations, built using COMSOL Multiphysics software, let students rotate and scale electromagnetic fields. Students can change parameters to visualize and virtually interact with fields on screen. Kinsey and his novel teaching tool were featured in IEEE Spectrum.</p>
+                    <h2 class="mt-5">Improving multi-source data fusion</h2>
+                    <p><a href="#">Ruixin Niu, Ph.D.</a>, is optimizing sensor management in distributed networks, which drive many systems including telecommunications, traffic monitoring and robotic vision. Sensors in these networks have different modalities, so it’s difficult to link data using physical models. Niu’s lab is applying sophisticated signal processing/machine learning techniques to fuse information from sensors with different modalities. His method combines traditional tracking algorithms with deep learning neural networks for object detection and estimation.</p>
+                    <h2 class="mt-5">Securing critical energy infrastructures</h2>
+                    <p><a href="#">Sherif Abdelwahed, Ph.D.</a>, is helping safeguard industrial control systems in critical energy infrastructures, which are prime targets for cyber attacks. He is building a quantitative and automated methodology to assess and manage security risks of both the overall industrial control system and its supervisory control and data acquisition subsystems. Abdelwahed’s method will integrate proactive and reactive security mechanisms to automate risk assessment and management. </p>
+                </div>
+            </div>
+            <div class="slide" id="slide5">
+                <div class="wrapper">
+                    <h1 class="text-center mb-5 mne">Mechanical and Nuclear Engineering</h1>
+                    <h2>A filter that kills airborne pathogens</h2>
+                    <p><a href="#">Wei-ning Wang, Ph.D.</a>, is developing a cost-efficient antimicrobial heating, ventilation, and air conditioning filter that kills airborne pathogens. The filter is made by inducing growth of iron oxides nanowires on iron mesh. When these nanowires receive a low direct voltage they produce oxidants capable of killing most pathogens. The electrical fields at the tips of these nanowires produce joule heating and electroporation effects to further deactivate pathogens. This innovation received a 2019 Commonwealth Research Commercialization Fund Award.</p>
+                    <h2 class="mt-5">Analysis for accident tolerant fuels</h2>
+                    <p>To advance nuclear power safety, <a href="#">Jessika Rojas, Ph.D.</a>, is working with the U.S. Department of Energy on testing protocols for accident tolerant fuels (ATF). These fuels can tolerate severe loss of active cooling in the reactor core for a considerably longer period of time than other fuel systems. Rojas is using advanced materials examination techniques to characterize ATF cladding surfaces. The results will enhance models for ATF surface chemistry and thermal performance.</p>
+                    <h2 class="mt-5">In-vitro correlations for personalized aerosol therapy</h2>
+                    <p><a href="#">Laleh Golshahi, Ph.D.</a>, received the 2019 International Society for Aerosols in Medicine Young Investigator Award. Her work on in-vitro pediatric aerosol therapy research has resulted in important contributions to pulmonary drug delivery. She has authored more than 30 peer-reviewed publications, including the first description of a child mouth-throat model for standardized testing of aerosol medicine delivery devices.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="wrapper">
+                <h1 class="text-center mb-5">Securing the Drug Supply Chain</h1>
+                <h2 class="my-5">Medicines for All Institute part of $354 million contract to prevent domestic shortages of critical medications</h2>
+                <p><img src="imgs/49655023116_bee3d6021f_o.jpg"></p>
+                <p>To prevent domestic shortages of critical medications, the Medicines for All Institute (M4ALL), based at VCU Engineering, has joined forces with pharmaceutical industry leaders to bring manufacturing of vulnerable pharmaceuticals and their ingredients back to the United States.</p>
+                <p>Phlow Corp., a Richmond-based public benefit corporation focused on the research, development and manufacturing of essential pharmaceuticals, leads the partnership and will incorporate M4ALL’s advanced manufacturing technologies to produce active pharmaceutical ingredients for critical and short-supply medications. Civica Rx, a leading nonprofit pharmaceutical company and national supplier of affordable, generic medications and AMPAC Fine Chemicals, with its Virginia-based pharmaceutical ingredient manufacturing operation, complete this new end-to-end pharmaceutical supply chain consortium to help reduce U.S. dependence on overseas drug manufacturers.</p>
+                <blockquote class="float-right">“Not only are we bringing significant benefit to society, but we are also driving sustainable economic development by providing a highly skilled workforce for the future.”<cite><strong>— Barbara D. Boyan, Ph.D.</strong><br>NAE, NAI, FAIMBE, FAAS, FASBMR<br>Alice T. and William H. Goodwin, Jr. Dean VCU College of Engineering</cite></blockquote>
+                <p>The U.S. Department of Health and Human Services announced a four-year contract with Phlow Corp. for $354 million to accelerate this initiative. The total contract value awarded to Phlow is up to $812 million which includes a four-year base award of $354 million with an additional $458 million included as potential options for long-term sustainability. Phlow Corp. was co-founded by M4ALL CEO B. Frank Gupton, Ph.D., and Eric Edwards, M.D., Ph.D., both VCU alumni.</p>
+                <p>“The timeliness of this partnership cannot be overstated,” said VCU Engineering Dean Barbara D. Boyan, Ph.D. “The ability to provide critical generic pharmaceuticals for the treatment of COVID-19 now and in the post-pandemic world that are manufactured in the United States is invaluable for ensuring the health care of Americans. We look forward to sharing the resources of the Medicines for All Institute with Phlow, Civica and AMPAC to meet these challenges.”</p>
+                <p>“The creation of the Medicines for All Institute and its evolution into this larger network of activity is a perfect example of the benefits possible by creating strong public-private partnerships,” Boyan said.</p>
+                <blockquote class="float-left">“The COVID-19 event has made us acutely aware of our current vulnerability in this area. My colleagues and I are grateful for the opportunity to play a part in addressing this effort to fix the acute and chronic health care challenges that are facing us today by bringing pharmaceutical manufacturing back to the U.S.”<cite><strong>— B. Frank Gupton, Ph.D.</strong><br>Chief Executive Officer Medicines for All Institute</cite></blockquote>
+                <p>M4ALL was founded out of VCU Engineering in 2017 to expand access to safe, effective and affordable medications. To do this, the institute’s engineers use advanced manufacturing technologies that significantly curb waste, cut costs and reduce pollution.</p>
+                <p>M4ALL is a pioneer in the development of continuous flow processing, a method of producing active pharmaceutical ingredients uninterrupted. This eliminates the inefficient stops and starts of manufacturing these ingredients batch by batch, as they are commonly produced. Active pharmaceutical ingredients manufactured through continuous flow processing generate less waste and their quality tends to be higher and more consistent.</p>
+                <p>Gupton said since its inception the institute has actively trained engineers and scientists in low-income countries, especially in Africa, and implemented its processes there. Gupton sees including domestic drug manufacturers in the institute’s network as an important next step. “The Medicines for All Institute is a global initiative that focuses on increasing access to health care for those who need it most. This new U.S.-driven effort will allow us to focus on creating a more robust and sustainable supply chain of essential medications in our country,” Gupton said.</p>
+                <p><img src="imgs/49654483728_e0fc8de25c_o.jpg"></p>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="wrapper">
+                <h1>COVID Challenge Accepted</h1>
+            </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-   
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="js/jquery.fullpage.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors: ['bmeSection', 'clseSection', 'csSection', 'eceSection', 'mneSection'],
-                menu: 'nav ul',
-                autoScrolling: false,
-            });
+    <script type="text/javascript" src="scrolloverflow.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript" src="examples.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+            scrollOverflow: true,
+            autoScrolling: false
         });
     </script>
+
 </body></html>

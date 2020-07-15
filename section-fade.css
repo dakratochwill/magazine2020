@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #333;
+    background-image: url('imgs/Concretewall.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h1.bme {
+    background: #f05023;
+    padding: 10px;
+    color: #fff;
+}
+
+h1.clse {
+    background: #e11e25;
+    padding: 10px;
+    color: #fff;
+}
+
+h1.cs {
+    background: #4db848;
+    padding: 10px;
+    color: #fff;
+}
+
+h1.ece {
+    background: #4bc1b3;
+    padding: 10px;
+    color: #fff;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.section {
+    text-align: left;
+}
+
+.section .wrapper,
+.slide .wrapper {
+    text-align: left;
+    height: auto;
+    max-width: 1400px !important;
+    margin: 100px auto 50px;
+}
+
+.section a {
+    color: #000;
+    font-weight: 500;
+    border-bottom: 2px solid #ffb300;
+}
+
+.section a:hover {
+    text-decoration: none;
+    color: darkred;
+    border: none;
+}
+
+.dean-photo {
+    max-width: 500px;
+    margin: 30px;
+}
+
+.fullpage-wrapper {
+    width: 100% !important;
+    transform: none !important;
+}
+
+.fp-section {
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.fp-section.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+@media screen and (max-width: 1400px) {
+    .section .wrapper,
+    .slide .wrapper {
+        margin: 100px 75px 50px;
+    }
+}
