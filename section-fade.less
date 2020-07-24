@@ -24,6 +24,17 @@ h3 {
     font-family: 'Fjalla One', sans-serif;
 }
 
+.font-30 {
+    font-size: 30px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+}
+
 h1 {
     font-size: 4em;
     
@@ -71,6 +82,16 @@ p {
 
 .navbar {
     background: #333;
+    padding: 0px;
+}
+
+.navbar-brand {
+    max-width: 300px;
+}
+
+.navbar p {
+    color: #fff;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -174,5 +195,13 @@ blockquote {
     .section .wrapper,
     .slide .wrapper {
         margin: 100px 75px 50px;
+    }
+    
+    .font-30 {
+        font-size: 20px;
+    }
+    
+    .grid-2 {
+        grid-template-columns: auto;
     }
 }
