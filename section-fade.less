@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&family=Roboto:wght@300;500&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -7,6 +7,48 @@ body {
     background-image: url('imgs/Concretewall.jpg');
     background-attachment: fixed;
     background-size: cover;
+    height: 100%;
+}
+
+#vcu-branding-bar--top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#vcu-branding-bar--bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.egr {
+    color: #ffb300;
+
+}
+
+.bme {
+    color: #f05023;
+
+}
+
+.clse {
+    color: #e11e25;
+
+}
+
+.cs {
+    color: #4db848;
+
+}
+
+.ece {
+    color: #4bc1b3;
+
+}
+
+.mne {
+    color: #154ea2;
 }
 
 img {
@@ -21,7 +63,19 @@ strong {
 h1,
 h2,
 h3 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Caladea', serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.small {
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .font-30 {
@@ -35,9 +89,21 @@ h3 {
     align-items: center;
 }
 
+a.read-more {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 0px !important;
+    font-style: italic;
+
+    &::before {
+        content: '>>';
+        margin: 0px 5px 0px 20px;
+    }
+}
+
 h1 {
     font-size: 4em;
-    
+
     &.egr {
         background: #ffb300;
         color: #333;
@@ -80,6 +146,13 @@ p {
     margin-bottom: 15px;
 }
 
+#header {
+    position: fixed;
+    top: 63px;
+    width: 100%;
+    z-index: 9999;
+}
+
 .navbar {
     background: #333;
     padding: 0px;
@@ -87,6 +160,27 @@ p {
 
 .navbar-brand {
     max-width: 300px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.navbar button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: none;
+    line-height: 1.5;
+    background: #fff;
+    transition: 100ms ease;
+
+    p {
+        color: #333;
+    }
+
+    &:hover {
+        background: #ffb300;
+    }
 }
 
 .navbar p {
@@ -96,19 +190,40 @@ p {
 }
 
 .navbar-nav a {
-    color: #fff;
+    color: #fff !important;
+    font-weight: 300;
     margin: 0px 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    text-transform: capitalize;
     padding: 15px 10px;
-    
+    font-size: 16px;
+
     &:hover {
         background: #000;
     }
 }
 
 #section1 {
-    background: #000;
+    background-color: #000;
+}
+
+#section2 {
+    background: url('imgs/Dean_recolor2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right top;
+    background-repeat: no-repeat;
+
+    h1,
+    h2,
+    h3,
+    p {
+        color: #fff;
+    }
+
+    .wrapper {
+        margin-right: 42%;
+        margin-left: 5%;
+    }
 }
 
 #section4 {
@@ -116,8 +231,210 @@ p {
     background-size: cover;
     background-attachment: fixed;
 
-    h1, h2, p {
+    h1,
+    h2,
+    p {
         color: #fff;
+    }
+
+    .fp-controlArrow.fp-prev {
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .fp-controlArrow.fp-next {
+        border-color: transparent transparent transparent #fff;
+    }
+
+
+    a {
+        color: #fff;
+    }
+
+}
+
+#section6 {
+    background: url('imgs/HighTech.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    h1,
+    h2 {
+        color: #4bc1b3;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    a {
+        color: #4bc1b3;
+        border-color: #fff;
+
+        &:hover {
+            color: #ffb300;
+        }
+    }
+
+    .wrapper {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .fp-controlArrow.fp-next {
+        border-color: transparent transparent transparent #fff;
+    }
+}
+
+#section7 {
+    background: url('imgs/students.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left top;
+
+    h1,
+    h2,
+    p {
+        color: #fff;
+    }
+
+    .wrapper {
+        margin-left: 40%;
+        margin-right: 10%;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+}
+
+#section8 {
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-family: 'Caladea', serif;
+        font-size: 20px;
+    }
+}
+
+#section9 {
+    background: #0a7f39;
+
+    h1 {
+        color: #333;
+    }
+
+    h2,
+    p {
+        color: #fff;
+    }
+
+    .wrapper {
+        margin-right: 45%;
+        margin-left: 5%;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+}
+
+#section10 {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 50px;
+        align-items: center;
+
+        &.reverse {
+            grid-template-columns: 5fr 1fr;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
+#section11 {
+
+    #slide1 {
+        background: url('imgs/WrightMemorial.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: left top;
+        background-repeat: no-repeat;
+
+        .wrapper {
+            margin-left: 40%;
+            margin-right: 10%;
+
+            p {
+                color: #fff;
+                font-size: 25px;
+            }
+        }
+    }
+
+    #slide2 {
+        background: url('imgs/GivingMyles.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: left top;
+        background-repeat: no-repeat;
+
+        .wrapper {
+            margin-right: 40%;
+            margin-left: 10%;
+
+            h2 {
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .fp-controlArrow.fp-prev {
+        border-color: transparent #fff transparent transparent;
+    }
+
+    .fp-controlArrow.fp-next {
+        border-color: transparent transparent transparent #fff;
+    }
+
+    a.button-gold {
+        background: #ffb300;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 22px;
+        border: 0px;
+
+        &:hover {
+            text-decoration: none;
+            color: #333;
+            background: #fff !important;
+            border: 0px;
+        }
     }
 }
 
@@ -130,7 +447,7 @@ p {
     text-align: left;
     height: auto;
     max-width: 1200px !important;
-    margin: 100px auto 50px;
+    margin: 200px auto 50px;
 }
 
 .section a {
@@ -146,8 +463,14 @@ p {
 }
 
 .dean-photo {
-    max-width: 500px;
-    margin: 30px;
+    max-width: 250px;
+    margin: 0px 0px 30px 30px;
+    float: right;
+}
+
+.dean-sign img {
+    max-width: 300px;
+    margin: 20px 0px 0px;
 }
 
 blockquote {
@@ -157,8 +480,8 @@ blockquote {
     margin: 30px;
     font-weight: 500;
     max-width: 500px;
-    background: rgba(0,0,0,0.3);
-    
+    background: rgba(0, 0, 0, 0.3);
+
     cite {
         font-size: 15px;
         font-weight: 300;
@@ -166,6 +489,12 @@ blockquote {
         display: block;
         margin-top: 10px;
     }
+}
+
+.capstone-image {
+    max-width: 500px;
+    float: right;
+    margin: 0px 0px 30px 30px;
 }
 
 .fullpage-wrapper {
@@ -192,16 +521,136 @@ blockquote {
 
 @media screen and (max-width: 1400px) {
 
-    .section .wrapper,
-    .slide .wrapper {
-        margin: 100px 75px 50px;
+    h1 {
+        font-size: 30px;
     }
-    
-    .font-30 {
+
+    h2 {
         font-size: 20px;
     }
-    
+
+    p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    a.read-more {
+        font-size: 16px;
+
+        &::before {
+            margin: 0px 5px 0px 10px;
+        }
+    }
+
+    .fp-controlArrow.fp-prev {
+        border-width: 18.5px 14px 18.5px 0;
+
+    }
+
+    .fp-controlArrow.fp-next {
+        border-width: 18.5px 0 18.5px 14px;
+
+    }
+
+    .section .wrapper,
+    .slide .wrapper {
+        margin: 200px 55px 300px;
+    }
+
+    .font-30 {
+        font-size: 16px;
+    }
+
     .grid-2 {
         grid-template-columns: auto;
+    }
+
+    .dean-photo,
+    .capstone-image {
+        float: none;
+        max-width: 100%;
+        margin: 20px 0px;
+    }
+
+    blockquote {
+        font-size: 20px;
+        margin: 0px;
+        font-weight: 500;
+        max-width: 100%;
+
+        cite {
+            font-size: 12px;
+        }
+    }
+
+    #section2 {
+        background: #000;
+
+        .wrapper {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    #section4 {
+        a {
+            color: #fff;
+        }
+    }
+
+
+    #section7 {
+        background: rgba(240, 80, 35, 1);
+        .wrapper {
+            margin: 200px 20px 300px;
+            padding: 20px;
+        }
+    }
+
+    #section9 {
+        .wrapper {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    #section10 {
+        .grid {
+            grid-template-columns: auto;
+
+            &.reverse {
+                grid-template-columns: auto;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    #section11 {
+        #slide1 {
+            background: #000;
+            .wrapper {
+                margin-right: 55px;
+                margin-left: 55px;
+                
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        #slide2 {
+            background: #000;
+            .wrapper {
+                margin-right: 55px;
+                margin-left: 55px;
+                
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
