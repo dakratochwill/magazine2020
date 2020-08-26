@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Roboto:wght@300;500&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -63,7 +63,7 @@ strong {
 h1,
 h2,
 h3 {
-    font-family: 'Caladea', serif;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 h3 {
@@ -80,6 +80,10 @@ h3 {
 
 .font-30 {
     font-size: 30px;
+}
+
+.gothic {
+    font-family: 'Gothic A1', sans-serif;
 }
 
 .grid-2 {
@@ -102,7 +106,7 @@ a.read-more {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
 
     &.egr {
         background: #ffb300;
@@ -192,10 +196,11 @@ p {
 .navbar-nav a {
     color: #fff !important;
     font-weight: 300;
-    margin: 0px 10px;
+    margin: 0px;
     text-transform: capitalize;
-    padding: 15px 10px;
-    font-size: 16px;
+    padding: 15px 10px !important;
+    font-size: 20px;
+    display: block;
 
     &:hover {
         background: #000;
@@ -207,23 +212,25 @@ p {
 }
 
 #section2 {
-    background: url('imgs/Dean_recolor2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: right top;
-    background-repeat: no-repeat;
+
+    .dean-photo {
+        max-width: 400px;
+        margin: 0px 0px 30px 30px;
+        float: right;
+    }
+
+    .dean-sign img {
+        max-width: 450px;
+        margin: 20px 0px 0px;
+    }
 
     h1,
     h2,
     h3,
     p {
-        color: #fff;
+        color: #333;
     }
 
-    .wrapper {
-        margin-right: 42%;
-        margin-left: 5%;
-    }
 }
 
 #section4 {
@@ -235,6 +242,10 @@ p {
     h2,
     p {
         color: #fff;
+    }
+
+    h2 {
+        line-height: 1.5;
     }
 
     .fp-controlArrow.fp-prev {
@@ -253,10 +264,21 @@ p {
 }
 
 #section6 {
-    background: url('imgs/HighTech.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+
+    #slide1 {
+        background: url('imgs/hightechArtboard%208.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+
+    #slide2 {
+        background: url('imgs/hightechArtboard%208%20copy.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+
 
     h1,
     h2 {
@@ -277,7 +299,6 @@ p {
     }
 
     .wrapper {
-        background: rgba(0, 0, 0, 0.5);
         padding: 20px;
     }
 
@@ -318,20 +339,23 @@ p {
 }
 
 #section8 {
-    h2 {
-        font-size: 22px;
+    h1 {
+        padding-top: 15px;
     }
-    
+    h2 {
+        font-size: 24px;
+    }
+
     h3 {
-        font-family: 'Caladea', serif;
+        font-weight: 400;
         font-size: 20px;
     }
 }
 
 #section9 {
-    background: url('imgs/codebeats.jpg');
+    background: url('imgs/outreachArtboard%201.png');
     background-attachment: fixed;
-    background-position: center right;
+    background-position: bottom right;
     background-size: cover;
 
     h1 {
@@ -361,12 +385,13 @@ p {
 #section10 {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-gap: 50px;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
         align-items: center;
 
         &.reverse {
-            grid-template-columns: 5fr 1fr;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 10px;
         }
 
         p {
@@ -463,17 +488,6 @@ p {
         color: darkred;
         border: none;
     }
-}
-
-.dean-photo {
-    max-width: 250px;
-    margin: 0px 0px 30px 30px;
-    float: right;
-}
-
-.dean-sign img {
-    max-width: 300px;
-    margin: 20px 0px 0px;
 }
 
 blockquote {
@@ -604,6 +618,7 @@ blockquote {
 
     #section7 {
         background: rgba(240, 80, 35, 1);
+
         .wrapper {
             margin: 200px 20px 300px;
             padding: 20px;
@@ -612,6 +627,7 @@ blockquote {
 
     #section9 {
         background: #0a7f39;
+
         .wrapper {
             margin-right: 20px;
             margin-left: 20px;
@@ -635,10 +651,11 @@ blockquote {
     #section11 {
         #slide1 {
             background: #000;
+
             .wrapper {
                 margin-right: 55px;
                 margin-left: 55px;
-                
+
                 p {
                     font-size: 18px;
                 }
@@ -647,10 +664,11 @@ blockquote {
 
         #slide2 {
             background: #000;
+
             .wrapper {
                 margin-right: 55px;
                 margin-left: 55px;
-                
+
                 p {
                     font-size: 18px;
                 }
